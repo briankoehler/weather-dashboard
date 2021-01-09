@@ -15,9 +15,13 @@ body {
 }
 
 .txt-lg {
-    font-size: 25vh;
+    font-size: 40vh;
 }
 
-.temp {
+.txt-md {
+    font-size: 10vh;
+}
+
+.txt-sml {
     font-size: 300%;
 }
