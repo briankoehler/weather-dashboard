@@ -3,6 +3,10 @@ Minimalistic weather dashboard to provide today's weather, temperature, high, lo
 
 Determines the user's position through JavaScript's GeoLocation, and finds closest city using the LocationIQ API; weather data is retrieved from the Open Weather Map API.  Developed using Node.js and Express.js.
 
+<p align='center'>
+    <img src='https://i.imgur.com/DdWU9Hd.png'/>
+</p>
+
 ## Getting Started
 Make sure you have [Node.js](https://nodejs.org/en/) installed.  Use the following to get the web application and its dependencies.
 
