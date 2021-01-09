@@ -113,4 +113,4 @@ const wrapperUpdate = () => {
 
 
 wrapperUpdate()
-window.setInterval(wrapperUpdate, 10 * 1000)
+window.setInterval(wrapperUpdate, 60 * 1000)
