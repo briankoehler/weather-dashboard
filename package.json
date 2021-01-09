@@ -1,7 +1,7 @@
 {
   "name": "weather-or-not",
   "version": "1.0.0",
-  "description": "",
+  "description": "Minimalistic weather dashboard to provide today's weather, temperature, high, low, as well as a 5-day forecast.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
