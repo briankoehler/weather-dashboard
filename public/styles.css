@@ -1,0 +1,23 @@
+
+body {
+    background-color: rgb(223, 233, 235) !important;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh !important;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+}
+
+.row {
+    /* border: 5px solid red; */
+}
+
+.txt-lg {
+    font-size: 25vh;
+}
+
+.temp {
+    font-size: 300%;
+}
