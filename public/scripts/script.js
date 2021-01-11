@@ -217,9 +217,26 @@ const getLocation = async () => {
     return respJson
 }
 
+
+const showTime = () => {
+    let date = new Date()
+    let h = date.getHours()
+    let m = date.getMinutes()
+
+    m = (m < 10) ? '0' + m : m
+    
+    let time = h + ':' + m
+    document.getElementById('clock').innerText = time
+
+    setTimeout(showTime, 1000)
+}
+
+
 /* Async wrapper that is executed to begin update cycle */
 (async () => {
     let loc = await getLocation()
     wrapperUpdate(loc)
-    window.setInterval(wrapperUpdate, 60 * 7 * 1000, loc)
+    // window.setInterval(wrapperUpdate, 60 * 7 * 1000, loc)
 })()
+
+showTime()

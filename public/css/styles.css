@@ -1,4 +1,12 @@
 
+* {
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;} to {opacity: 1;}
+}
+
 body {
     background-color: rgb(223, 233, 235) !important;
     font-family: 'Quicksand', sans-serif;
@@ -23,5 +31,5 @@ body {
 }
 
 .txt-sml {
-    font-size: 300%;
+    font-size: 5vh;
 }
