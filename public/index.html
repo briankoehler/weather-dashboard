@@ -18,8 +18,20 @@
 <body>
     <div class='container'>
 
+        <div class='row info'>
+            <div class='col-10'>
+                <form>
+                    <input id='city' type='text' class='form-control txt-sml'>
+                    <input type='submit' style='display: none'>
+                </form>
+            </div>
+            <div class='col-2 my-auto'>
+                <span id='clock' class='float-right txt-sml' />
+            </div>
+        </div>
+
         <!-- Today's Forecast -->
-        <div class="row h-75">
+        <div class="row today">
             
             <!-- Today's Weather Icon -->
             <div class='col'>
@@ -28,20 +40,16 @@
 
             <!-- Today's Temperatures -->
             <div class='col'>
-                <!-- Current Temperature -->
                 <div class='row h-75 justify-content-center'>
-                    <h1 id='today-temperature' class='justify-content-center my-auto txt-lg' />
-                </div>
-                <!-- High and Low -->
-                <div class='row h-25 justify-content-center'>
-                    <h1 id='today-high-low' class='justify-content-center my-auto txt-md' />
+                    <h1 id='today-temperature' class='my-auto txt-lg' />
+                    <h1 id='today-high-low' class='my-auto txt-md' />
                 </div>
             </div>
 
         </div>
 
         <!-- 5 Day Forecast -->
-        <div class="row h-25">
+        <div class="row forecast">
 
             <div class='col-md'>
                 <div class='row h-50 justify-content-center'>

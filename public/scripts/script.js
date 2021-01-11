@@ -213,6 +213,9 @@ const getLocation = async () => {
     /* Parse response as JSON */
     const respJson = await response.json()
 
+    /* Set city input placeholder based on current city */
+    document.getElementById('city').placeholder = respJson['address']['city'] + '...'
+
     /* Return JSON data */
     return respJson
 }
@@ -223,6 +226,7 @@ const showTime = () => {
     let h = date.getHours()
     let m = date.getMinutes()
 
+    h = (h < 10) ? '0' + h : h
     m = (m < 10) ? '0' + m : m
     
     let time = h + ':' + m
@@ -240,3 +244,12 @@ const showTime = () => {
 })()
 
 showTime()
+
+window.onload = () => {
+    const logTest = (e) => {
+        console.log(e.target.value)
+    }
+    
+    document.querySelector('input').addEventListener('input', logTest)
+    document.querySelector('input').value = ''
+}
