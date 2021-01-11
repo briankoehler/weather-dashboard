@@ -240,7 +240,7 @@ const showTime = () => {
 (async () => {
     let loc = await getLocation()
     wrapperUpdate(loc)
-    // window.setInterval(wrapperUpdate, 60 * 7 * 1000, loc)
+    window.setInterval(wrapperUpdate, 60 * 7 * 1000, loc)
 })()
 
 showTime()
